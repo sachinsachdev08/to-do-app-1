@@ -1,0 +1,123 @@
+#top{
+    
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.plus{
+    display: inline-block;
+    margin-left: 25%; 
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.middle{
+    display: inline-block;
+    border: 2px orangered solid;
+    margin-top: 5%;
+    margin-left: 25%;
+    border-radius: 15px;
+    padding-bottom: 100px;
+    width: 14%;
+    padding-left: 0px;
+    box-shadow: 10px 10px 10px lightgrey;
+}
+.change{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: 40%;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    z-index: 10;
+    opacity: 0;
+}
+.modal_content{
+    border: 2px solid orangered;
+    color: orangered;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 15px;
+    background-color: white;
+    width: 20%;
+    height: 10%;
+    opacity: 0;
+    visibility: hidden;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+.input1{
+    display: block;
+    margin-left: 24%;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px lightgrey;
+
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal:target .modal_content{
+    visibility: visible;
+    opacity: 1;
+}
+
+.button1{
+    color: white;
+    background-color: orangered;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid orangered;
+}
+
+.close{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 30px;
+
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:visited{
+    color: grey;
+}
+.close:hover{
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
